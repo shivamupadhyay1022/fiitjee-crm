@@ -1,0 +1,266 @@
+{
+  "//": "====================================================================================================",
+  "//": "IMPORTANT NOTE FOR MY FUTURE SELF (THE WORLD-CLASS SENIOR FRONTEND ENGINEER)",
+  "//": "====================================================================================================",
+  "//": "",
+  "//": "Hey there, brilliant me! You're looking at a snapshot of the Firebase Realtime Database.",
+  "//": "This file, `data.json`, serves ONE purpose and one purpose ONLY: CONTEXT and REFERENCE.",
+  "//": "",
+  "//": "DO NOT, under any circumstances, import or use this file directly in the application code.",
+  "//": "The app should ALWAYS connect to the LIVE Firebase database to fetch, create, update, and",
+  "//": "delete data. This file is static and will become outdated the moment a user interacts with the app.",
+  "//": "",
+  "//": "Why is it here then? Great question, future me.",
+  "//": "1.  **Data Structure Reference**: To quickly see the shape of the data for `users` (students), `employees`,",
+  "//": "    `programs`, `inquiries`, `potentials`, `batches`, `exams`, etc. When you're building a new feature or debugging,",
+  "//": "    a quick glance here is faster than navigating the Firebase Console.",
+  "//": "2.  **Initial Schema Understanding**: It was provided by the user to bootstrap the Firebase",
+  "//": "    integration. It's the source of truth for the initial data model.",
+  "//": "3.  **Offline Sanity Check**: If you're offline and need to remember what a `user` object looks like,",
+  "//": "    this is your best friend.",
+  "//": "",
+  "//": "To reiterate: THIS IS A READ-ONLY ARTIFACT FOR DEVELOPMENT. NOT A DATA SOURCE FOR THE APP.",
+  "//": "All data operations must go through the Firebase SDK (`firebase/database`).",
+  "//": "",
+  "//": "Stay awesome and keep shipping amazing UIs.",
+  "//": "====================================================================================================",
+  "batches": {
+    "-O_b_ZkWjG98zIj7aLeJ": {
+      "code": "EG001",
+      "createdAt": "2025-09-20T14:45:26.742Z",
+      "name": "Rankers Batch",
+      "remarks": "Test Batch",
+      "status": "active",
+      "studentCount": 0,
+      "updatedAt": "2025-09-20T14:45:26.742Z"
+    }
+  },
+  "employees": {
+    "ananyasharmafiitjeecom": {
+      "name": "Ananya Sharma",
+      "email": "ananya.sharma@fiitjee.com",
+      "phone": "9876543210",
+      "role": "Senior Counselor",
+      "joiningDate": "2022-08-15T09:00:00.000Z",
+      "address": "123, Learning Lane, Education City, 110011",
+      "dob": "1990-05-20",
+      "status": "approved",
+      "performance": {
+        "inquiryToEnrollmentConversionRate": 35.5,
+        "studentSuccessRate": 88.0,
+        "monthlyTargets": {
+          "2024-08": {
+            "inquiriesTarget": 50,
+            "enrollmentsTarget": 15,
+            "inquiriesActual": 55,
+            "enrollmentsActual": 18
+          },
+          "2024-09": {
+            "inquiriesTarget": 50,
+            "enrollmentsTarget": 15,
+            "inquiriesActual": 48,
+            "enrollmentsActual": 16
+          }
+        },
+        "feedbackScore": 4.7
+      },
+      "attendance": {
+        "2024-09-20": {
+          "checkIn": "2024-09-20T09:02:14.000Z",
+          "checkOut": "2024-09-20T18:05:30.000Z",
+          "status": "present",
+          "notes": ""
+        },
+        "2024-09-21": {
+          "checkIn": "2024-09-21T09:00:05.000Z",
+          "checkOut": null,
+          "status": "present",
+          "notes": "Logged in."
+        }
+      },
+      "salary": 75000,
+      "emergencyContact": {
+        "name": "Rohan Sharma",
+        "phone": "9876543211"
+      },
+      "createdAt": "2022-08-15T09:00:00.000Z",
+      "updatedAt": "2024-09-21T09:00:05.000Z"
+    },
+    "emp_vikram_singh_02": {
+      "name": "Vikram Singh",
+      "email": "vikram.singh@fiitjee.com",
+      "phone": "9123456789",
+      "role": "Faculty - Physics",
+      "joiningDate": "2021-07-01T09:00:00.000Z",
+      "address": "456, Quantum Avenue, Knowledge Park, 110022",
+      "dob": "1985-11-10",
+      "status": "active",
+      "performance": {
+        "studentSuccessRate": 92.5,
+        "monthlyTargets": {
+          "2024-08": {
+            "classesTakenTarget": 40,
+            "classesTakenActual": 42
+          }
+        },
+        "feedbackScore": 4.9
+      },
+      "attendance": {
+        "2024-09-20": {
+          "checkIn": "2024-09-20T08:55:10.000Z",
+          "checkOut": "2024-09-20T17:30:00.000Z",
+          "status": "present",
+          "notes": "Conducted extra doubt-clearing session."
+        },
+        "2024-09-21": {
+          "checkIn": null,
+          "checkOut": null,
+          "status": "leave",
+          "notes": "Sick leave"
+        }
+      },
+      "salary": 95000,
+      "emergencyContact": {
+        "name": "Priya Singh",
+        "phone": "9123456780"
+      },
+      "createdAt": "2021-07-01T09:00:00.000Z",
+      "updatedAt": "2024-09-20T17:30:00.000Z"
+    }
+  },
+  "exams": {
+    "JEE_ADV": {
+      "2016": [
+        {
+          "air": 137,
+          "name": "BISMAY SWAIN",
+          "program": "Two Year Classroom Program",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758183695204-Untitled-design-55.png"
+        },
+        {
+          "air": 265,
+          "name": "RAKESH BAL",
+          "program": "Three Year Classroom Program",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758183718256-Untitled-design-56.png"
+        }
+      ],
+      "2017": [
+        {
+          "air": 382,
+          "name": "SWASTIK SAHOO",
+          "program": "Two Year Classroom Program",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758183860521-Untitled-design-44.png"
+        }
+      ],
+      "2018": [
+        {
+          "air": 82,
+          "name": "SARTHAK BEHERA",
+          "program": "Four Year CRP+ UDAYA-2 Yr CRP + Little Genie- 1 Yr Foundation Program",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758184091305-Untitled-design-37.png"
+        }
+      ],
+      "2019": [
+        {
+          "air": 51,
+          "name": "SAYANTAN DHAR",
+          "program": "FOUR YEAR CLASSROOM PROGRAM",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758184172006-Untitled-design-30.png"
+        }
+      ],
+      "2020": [
+        {
+          "air": 365,
+          "name": "STITIPRAJNA SAHOO",
+          "program": "UDAYA-ONE YEAR CLASSROOM PROGRAM+ FOUR YEAR CLASSROOM PROGRAM",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758184254991-Untitled-design-20.png"
+        }
+      ],
+      "2022": [
+        {
+          "air": 11,
+          "name": "DEEVYANSHU MALU",
+          "program": "LITTLE GENIE-1 YR FOUNDATION UDAYA-TWO YEAR CRP+ FOUR YEAR CLASSROOM PROGRAM",
+          "url": "https://cdn.fiitjeebhubaneswar.in/Untitled-design.png"
+        }
+      ]
+    },
+    "JEE_MAIN": {
+      "2016": [
+        {
+          "air": 34,
+          "name": "BARADA PRASAD DEBASISH PANDA",
+          "program": "Four Year Classroom Program",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758184739782-Untitled-design-63.png"
+        }
+      ],
+      "2017": [
+        {
+          "air": 64,
+          "name": "SUBHANKAR CHAKRABORTY",
+          "program": "ALL INDIA TEST SERIES AND CONCEPT STRENGTHENING CLASSROOM PROGRAM",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758184864274-Untitled-design-2024-02-23T165027.344-1.png"
+        }
+      ],
+      "2018": [
+        {
+          "air": 29,
+          "name": "SARTHAK BEHERA",
+          "program": "FOUR YEAR CLASSROOM PROGRAM+UDAYA- 2 YRS CLASSROOM PROGRAM+ LITTLE GENIE- 1 YR FOUNDATION PROGRAM",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758185019812-Untitled-design-37.png"
+        }
+      ],
+      "2022": [
+        {
+          "air": 149,
+          "name": "DEEVYANSHU MALU",
+          "program": "FOUR YEAR CLASSROOM PROGRAM",
+          "score": "NA",
+          "url": "https://cdn.fiitjeebhubaneswar.in/1758185198101-Untitled-design.png"
+        }
+      ]
+    }
+  },
+  "programs": {
+    "a8b4c0d1e2f34567890a1b2c3d4e5f60": {
+      "category": "Engineering",
+      "code": "6051 ",
+      "createdAt": "2025-09-20T11:01:56.736Z",
+      "description": "",
+      "duration": "1 Year",
+      "fee": 50000,
+      "name": "LG",
+      "status": "active",
+      "targetAudience": "6",
+      "updatedAt": "2025-09-20T11:01:56.736Z"
+    }
+  },
+  "users": {
+    "FnpwN6YqRCe1OPxaAsg3QErsK0x1": {
+      "address": "",
+      "batchId": "-O_b_ZkWjG98zIj7aLeJ",
+      "board": "CBSE",
+      "class": "",
+      "createdAt": "2025-09-19T12:37:16.824Z",
+      "dob": "",
+      "email": "shivam.strive@gmail.com",
+      "enrollmentId": "22052002",
+      "fullName": "Shivam",
+      "id": "FnpwN6YqRCe1OPxaAsg3QErsK0x1",
+      "medium": "English",
+      "phone": "",
+      "programId": "",
+      "school": "",
+      "status": "active"
+    }
+  }
+}
