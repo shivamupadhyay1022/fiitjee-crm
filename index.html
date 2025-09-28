@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coaching Class CRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script>
+      // FOUC Prevention Script: Sets the theme class on <html> before the page renders.
+      // Defaults to light theme if no preference is saved in localStorage.
+      (function() {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // This instructs Tailwind CSS to use the 'dark' class on the <html> tag to determine the theme.
+      // It must come *after* the main Tailwind script is loaded.
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              orbitron: ['Orbitron', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js",
+    "firebase/database": "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.3.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/fiitjee-crm/assets/index-DhhvLtg_.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
